@@ -1,0 +1,30 @@
+arm	arm-linux
+bef	Befunge
+bf	Brainfuck
+c	C
+cl	CommonLisp
+cpp	C++14 (compile-time)
+cr	Crystal (compile-time)
+el	Emacs Lisp
+forth	Forth
+go	Go
+i	C-INTERCAL
+java	Java
+js	JavaScript
+php	PHP
+piet	Piet
+pietasm	Piet Assembler
+pl	Perl5
+py	Python
+rb	Ruby
+sed	sed
+sh	Bash
+sqlite3	SQLite3
+swift	Swift
+tex	TeX
+tf	TensorFlow (WIP)
+tm	Turing machine
+unl	Unlambda
+vim	Vim script
+ws	Whitespace
+x86	i386-linux
