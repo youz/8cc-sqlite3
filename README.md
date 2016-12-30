@@ -74,7 +74,7 @@ sqlite3> INSERT INTO eir(b) SELECT stdout FROM elvm_8cc;
 ### Assemble ELVM IR to a target language
 
 Set an alias-string for a target language to `option.target`.
-See [Language List](#Supported-target-languages) for details of alias strings.
+See [Language List](#supported-target-languages) for details of alias strings.
 
 Then select `stdout` from the view `elvm_elc`.
 
