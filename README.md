@@ -12,7 +12,7 @@ using recursive common table expression.
 SQLite3 shell (ver.3.9.0 or later) with JSON1 extension enabled
 
 
-## build
+## Build
 
 ```
 $ git clone https://github.com/youz/8cc-sqlite3.git
@@ -34,7 +34,7 @@ Or get the pre-built binary from [here](https://github.com/youz/8cc-sqlite3/rele
 - `elvm_8cc_elc(stdout TEXT)` - pipelining 8cc & elc
 
 
-## usage
+## Usage
 ### Import C source code
 
 ```sql
@@ -43,7 +43,7 @@ sqlite3> DELETE FROM src;
 sqlite3> INSERT INTO src(b) VALUES('
 int putchar(int);
 int main() {
-  char* p = "Hello,world!\n";
+  char* p = "Hello, world!\n";
   for (; *p; p++) {
     putchar(*p);
   }
@@ -129,4 +129,5 @@ sqlite3> SELECT writefile('output.js', stdout) FROM elvm_8cc_elc;
 | ws      | Whitespace             |
 | x86     | i386-linux             |
 
-This list is based on ELVM revision `e99b36e53bfd9c5721c579d143ac052cf94cdb17`.
+This list is based on [ELVM](https://github.com/shinh/elvm)
+revision `e99b36e53bfd9c5721c579d143ac052cf94cdb17`.
