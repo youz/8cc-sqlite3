@@ -55,7 +55,7 @@ or use `readfile` function.
 
 ```sql
 sqlite3> DELETE FROM src;
-sqlite3> INSERT INTO src(b) VALUES(readfile('sample/hello.c'));
+sqlite3> INSERT INTO src(b) VALUES(readfile('samples/hello.c'));
 ```
 
 **Caution: Don't use #include directive in the C source** 
