@@ -5,7 +5,7 @@ SQL := elvm.sql
 DB := elvm.db3
 
 DIST := elvm-sqlite3.zip
-DISTFILES := elvm.db3 README.md LICENSE samples
+DISTFILES := $(SRC) $(TARGETS) $(MKRB) $(DB) README.md LICENSE Makefile samples
 
 all: $(DB)
 
