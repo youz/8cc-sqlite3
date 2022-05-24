@@ -11,6 +11,10 @@ using recursive common table expression.
 
 SQLite3 shell (ver.3.9.0 or later) with JSON1 extension enabled
 
+> **Warning**  
+> **ver 3.9.0 ~ 3.34.1 strongly recommended**  
+> ver 3.35.0 or later creates a huge temporary file (over 100GiB) by CTE-materialization feature.  
+> ref. [SQLite - The WITH Clause - Materialization Hints](https://sqlite.org/lang_with.html#mathint)
 
 ## Build
 
@@ -68,7 +72,7 @@ Select `stdout` from the view `elvm_8cc` and insert it into the table `eir(b BLO
 sqlite3> DELETE FROM eir;
 sqlite3> INSERT INTO eir(b) SELECT stdout FROM elvm_8cc;
 ```
-**Caution: It takes several tens of minutes to compile the helloworld program**
+**Caution: It takes a few minutes to compile a hello world program**
 
 
 ### Assemble ELVM IR to a target language
