@@ -12,9 +12,11 @@ using recursive common table expression.
 SQLite3 shell (ver.3.9.0 or later) with JSON1 extension enabled
 
 > **Warning**  
-> **ver 3.9.0 ~ 3.34.1 strongly recommended**  
-> ver 3.35.0 or later creates a huge temporary file (over 100GiB) by CTE-materialization feature.  
-> ref. [SQLite - The WITH Clause - Materialization Hints](https://sqlite.org/lang_with.html#mathint)
+> **ver 3.39.0 or later is strongly recommended**  
+> ver 3.35.0 ~ 3.38.5 creates a huge temporary file (over 100GiB) by CTE-materialization feature.  
+> ref. [SQLite - The WITH Clause - Materialization Hints](https://sqlite.org/lang_with.html#mathint)  
+> Fixed in ver 3.39.0 to avoid unnecessary materialization.
+
 
 ## Build
 
